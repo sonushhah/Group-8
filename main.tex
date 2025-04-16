@@ -1,0 +1,242 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{lipsum} % For placeholder text, remove when adding actual content
+\usepackage{hyperref} % For clickable Table of Contents
+
+\geometry{a4paper, margin=1in}
+
+% Configure header to display the logo on every page
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\includegraphics[width=2.5cm]{logos/logo.png}} % Adjust width if needed
+
+\title{\textbf{The Impact of Specialized Hardware on Real-Time Processing in Embedded Systems}}
+\author{Sonu Shah\\University of Newcastle}
+\date{March 2025}
+
+\begin{document}
+
+% Title Page
+\begin{titlepage}
+    \centering
+    \includegraphics[width=7cm]{logos/logo.png}\\[7cm] % University logo at the top
+    {\Huge \textbf{The Impact of Specialized Hardware on Real-Time Processing in Embedded Systems}}\\[1cm]
+    {\Large \textbf{Group 8}}\\[0.5cm]
+    {\large University of Newcastle}\\[0.5cm]
+    {\large March 2025}\\[2cm]
+    \vfill
+\end{titlepage}
+\section*{Abstract}
+
+This project explores the impact of specialized hardware on real-time processing in embedded systems. Therefore, real-time processing remains necessary in industrial sectors such as automotive, healthcare, and industrial automation, where speed must be absolute and definite response times essential--even milliseconds can make all the difference. This study examines how good specialized hardware tools like FPGAs (Field-Programmable Gate Arrays), ASICs (Application-Specific Integrated Circuits), and GPUs (Graphics Processing Units) are in that they improve performance, reduce latency, and characteristically enhance Embedded systems' computational efficiency.
+
+Integrated programming, which refers to the smooth integration of hardware and software to achieve maximum efficiency, is critical in embedded system design. It enables the efficient execution of real-time operations by utilizing hardware acceleration and parallel processing. This study investigates the importance of integrated programming in specialized hardware, showing how it enhances processing speed, power efficiency, and system reliability.
+
+The information presented in this report includes a comparative analysis of general-purpose and special-purpose hardware, examples that employ embedded system integration, and the special problems that arise because of specialized components. In addition, trade-offs such as cost, complexity, and scalability are examined. By examining several case studies, the project gives insight into the advantages and disadvantages of special-purpose hardware for real-time processing within an embedded system.
+
+\newpage
+
+% Table of Contents (Clickable)
+\tableofcontents
+\newpage
+
+
+
+% Introduction
+\section{Introduction}
+One crucial aspect of computation today is real-time processing in embedded systems, which allows devices to execute time-sensitive tasks exactly and reliably. Embedded systems are found all over. In industries such as healthcare, automotive, industrial automation, or telecommunications, they can fail for long periods of time with all processing on hold imaginable. Imagine also the inefficiency that would result. To add greater power to such systems, hardware channels such as Field-Programmable Gate Arrays (FPGAs), Application-Specific Integrated Circuits (ASICs), and Graphics Processing Units (GPUs) are integrated for specific computational requirements to meet real-time processing demands.
+
+Specialized hardware improves embedded system performance by accelerating computations, lowering latency, and increasing power economy. Unlike general-purpose processors, specialized hardware is intended to perform specific operations, allowing for faster and more efficient execution of real-time tasks. Integrated programming, which seamlessly mixes software and hardware, ensures that embedded systems perform optimally even under strict temporal constraints.
+
+This research explores the role of specialized hardware in real-time processing, focusing on its benefits, limitations, and real-world applications. It also discusses how integrated programming improves system performance. By studying several case studies and comparing general-purpose versus specialist hardware, this study sheds light on the impact of specialized components on embedded systems, assisting in determining their usefulness in real-time contexts.
+
+\newpage
+
+% Placeholder for the next sections
+\section{Background and Literature Review}
+\subsection{Embedded Systems and Real-Time Processing}
+Embedded systems are computing systems thats are engineered to execute for a specific
+work within a bigger system. Embedded systems, in contrast to general-purpose devices,
+are designed and optimized for particular use cases and typically run on constrained
+hardware. These type of systems also deployed in consumer electronics like smart phone,
+Medical devices, industrial controllers, etc.
+
+Real-time processing is one of the most prominent features of embedded systems, which
+means that they must process data and respond to inputs within strict timing constraints. For
+instance, in various applications, including automotive safety systems or industrial robotic
+arms, timing constraints are so stringent that missing them would cause catastrophic failure.
+Real-time systems, where missing a deadline could be catastrophic for the system, or soft
+real-time systems where missing a deadline is acceptable but degrades performance.
+
+\subsection{Specialized Hardware for Embedded Systems}
+The processing power of embedded systems can be improved using specialized hardware;
+for example, Graphics processing units(GPUs) field-programmable Gate Arrays (FPGAs),
+and Application-specific Integrated circuits (ASICs).
+
+Graphics processing units(GPU):Have been designed for graphical rendering originally,
+GPUs are also used in a wider range of parallel computing tasks owing to the fact that they
+can perform the same operation in multiple times at the same time.
+
+Field-Programmable Gate Arrays(FPGAs):These are chips that can be configured hardware circuits according to the need. In
+this application, they provide great flexibility and efficiency for real-time processing.
+
+Application-specific integrated circuit(ASICs):Although expensive to develop, they
+offer more performance and greater power efficiency than its general-purpose processor
+cousins.
+They are more efficient in terms of processing speed, energy utilization, and real-time
+performance relative to traditionalCPUs(central performance Units) abd are thus a great fit
+for many classes of embedded applications requiring rapid inferences.
+
+\subsection{Previous Research}
+There are numerous studies highlighting the performance of various embedded real
+time
+applications and the role of specialized hardware on the same time.
+
+Healthcare experts are
+highly influential.FPGAs, for instance, are used to boost performance in autonomous
+vehicles and GPUs accelerate real-time digital image processing in medical diagnostics.
+
+Here are few case studies that demonstrate how specialized hardware is leveraged across
+various industries.
+
+Automotive Industry:Advanced driver rely on GPUs and FPGAs for processing sensor data in real-time.
+
+Healthcare: Medical imaging and real-time diagnostics benefit from specialized hardware, allowing faster and accurate detection.
+
+\newpage
+\section{Methodology}
+\subsection{Comparative Analysis of Hardware Solutions}
+Comparative research is applied here to compare the usability of FPGAs’, ASICs’, and GPUs’ in real-
+time embedded systems. They are compared based on five parameters: performance, power consumption,
+flexibility, cost, and scalability. Systematic comparison is a method to extract data from the literature
+and compare hardware and embedded system case studies. All hardware platforms are compared based
+on the following parameters: 
+
+item Performance: Efficiency in executing the task for real-time applications.
+
+item Power Efficiency: Power usage per compute load. 
+
+item Flexibility: The extent to which each hardware can
+	be programmed to carry out a range of different functions or configurations. 
+    
+item Cost and  Development Time: Balance between upfront cost, manufacturing cost, and design ease. 
+    
+item Scalability: Ease of use of the hardware for many applications or the ability to move to volume production.
+
+
+item The outcome of this effort helps make the optimal hardware choice in the varied requirements of real-time embedded systems. The insights generated will enable knowledge-based hardware decision-making where flexibility, computing power, and power consumption are the primary concerns.
+
+
+\subsection{Experimental Setup}
+Real-Time or Simulation Testing with Specific Hardware Platforms
+We intend to carry out simulated and real-time testing to determine the effect of
+specialized hardware on the real-time processing of the embedded system. The experimental setup consists of the following components:
+
+1. Hardware Platforms:
+
+• Specialized hardware accelerators (FPGA, DSP, or TPU) provided for real-time processing.
+
+• General-purpose embedded processor for benchmarking: ARM Cortex M-series, Raspberry Pi,
+or ESP32.
+
+2. Software Environment:
+
+• Development environment comprised of Xilinx Vivado (FPGA), MATLAB (DSP based
+processing), TensorFlow Lite (TPU based processing).
+
+• A bare-metal firmware or real-time operating system (RTOS) for non-anticipated determinism
+in task scheduling.
+
+3. Test Scenarios:
+
+• Performing real-time tasks with defined frequency: image processing, sensor data fusion, and
+control loop execution.
+
+• Measuring execution time, power usage, and latency with different workloads.
+
+4. Performance Measurements:
+
+• Execution time in milliseconds
+
+• Processing throughput measured by number of operations per second
+
+• Power efficiency expressed in mW per operation
+
+• Response measured latency in real-time processing
+
+Benchmarking Against Traditional Embedded Processors
+An alternative approach will be adopted for evaluating the beneficial aspects of specialized
+hardware.
+There will be a side-by-side comparison between specialized hardware and traditional
+embedded processors, subjected to similar conditions. The steps described below will be
+involved:
+
+1. Execution Time Comparison:
+
+• The time taken to complete specific real-time tasks will be measured.
+
+• The results will compare specialized hardware and traditional embedded processors.
+
+2. Resource Utilization Analysis:
+
+• CPU usage, memory usage, and power efficiency will be analyzed.
+
+• Trade-offs between computational power and energy efficiency will be identified.
+
+3. Latency Measurements:
+
+• Response time for time-critical operations will be evaluated.
+
+• Determine whether the use of specialized hardware will significantly reduce latency compared
+to general-purpose processors.
+
+
+\newpage
+\section{Results and Discussion}
+\subsection{Performance Analysis}
+Speedup with Specialized Hardware: The specialized hardware like Graphics Processing Units (GPUs), Field-Programmable Gate Arrays (FPGAs) and Application-Specific Integrated Circuits(ASICs) enhance the performance in embedded systems which demonstrates crucial improvements in computational efficiency and speed. One of the most important advantages is the ability to process large amount of data concurrently. GPUs, excel in parallel processing mean it carries the same operation across numerous cores at once. It is important in system to in the automotive industry, Advanced Driver Assistance Systems (ADAS) relay on GPUs to quickly analyse data from sensors, helping the system to make faster and more accurate decisions. It improves safety in critical moments where reactions are essential. On the other hand, FPGAs provides a unique advantage in application where flexibility and reconfigurability are essential. In contrast to GPUs, built for specific tasks, FPGAs can be modified to handle different jobs as needed. Both are use in robotics and adaptive filtering demonstrates their abilities to deliver large amount of data quickly while adjusting to changing demands. ASICs are a whole different level of optimization, designed for tasks. Although it takes time to design, it beats GPUs and FPGAs in speed and power efficiency when applied to specialized application
+
+\subsection{Power Consumption and Scalability}
+Trade-offs between performance and energy: Choosing specialized hardware is all about finding the balance between performance and energy. GPUs are extremely powerful, but they can drain a lot of energy which is not good for the device with limited battery power. On the other hand, FPGAs offer a good balance between energy and performance which make them more reliable for tasks where both energy and performance need. ASICs are the most energy efficient for tasks and cannot be changed once made. While they work well for fixed applications, their lack of flexibility limits their use.
+
+GPUs are highly scalable and can handle larger workload by simply adding cores allows them to process more data at once, but this consume more energy which can be concern in power limited environments. FPGAs offers flexibility and can be reprogrammed for multiply tasks, making them adaptable as needed. However, ASICs are less scalable because they are designed for one specific task. Once it built it cannot be changed.
+
+\subsection{Future Trends}
+\textbf{Emerging hardware Technologies:}
+There are many technologies that can improve embedded system. Some AI accelerators such as Google Tensor Processing Units (TPUs) helps to improve in machine learning by providing power designed for AI tasks. Quantum computing is new, but it has potential to transform the areas which needs computing power like cryptography and big data analysis. It makes the tasks much faster and efficient.
+
+\textbf{Future Advancements in Embedded System:}
+In the future, we can expect to see more hybrid system that combines the best of GPUs, FPGAs and ASICs to create powerful and useful solutions. These systems would use GPUs for general purpose computing, FPGAs for flexible, reprogrammable tasks and ASICs for specific optimized functions. This mixture would allow for better performance across various applications. As technology gets smaller and more energy efficient will lead more powerful and capable IOT devices and wearable.
+
+\newpage
+\section{Conclusion}
+Using specialized hardware, such as GPUs, FPGAs, and ASICs, in real-time embedded systems can result in a huge performance boost by improving speed, lowering latency, and optimizing the power consumption. GPUs shine for tasks that run in parallel, while FPGAs allow for great flexibility and ASICs deliver impressive efficiency for particular functions.
+
+There are trade-offs in cost and scalability, but integrated programming can help with bridging hardware and software for reliable, time-sensitive processing. As embedded technology continues to advance, hybrid systems that incorporate these types of hardware will play a crucial role in shaping the future of embedded solutions.
+
+\newpage
+\section{References}
+
+	1.	Liu, J. W. S. (2000). Real-Time Systems. Prentice Hall.
+    
+	2.	Wolf, W. (2001). Computers as Components: Principles of Embedded Computing System Design. Morgan Kaufmann.
+    
+	3.	Marwedel, P. (2010). Embedded System Design: Embedded Systems Foundations of Cyber-Physical Systems. Springer.
+    
+	4.	Mittal, S. (2016). “A Survey of Techniques for Improving Energy Efficiency in Embedded Computing Systems.” International Journal of Computer Aided Engineering and Technology, 8(6), 721–741.
+    
+	5.	Zhang, Y., & Zhao, J. (2019). “FPGA-Based Acceleration Techniques for Deep Learning Applications: A Survey.” ACM Transactions on Reconfigurable Technology and Systems, 12(3), 1-26.
+    
+	6.	Chen, Y., Emer, J., & Sze, V. (2016). “Eyeriss: A Spatial Architecture for Energy-Efficient Dataflow for Convolutional Neural Networks.” ACM SIGARCH Computer Architecture News, 44(3), 367-379.
+    
+	7.	Kuon, I., & Rose, J. (2007). “Measuring the Gap Between FPGAs and ASICs.” IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 26(2), 203-215.
+    
+	8.	Nvidia. (2020). NVIDIA GPU Architecture Whitepaper. www.nvidia.com
+	9.	Jouppi, N. P., et al. (2017). “In-Datacenter Performance Analysis of a Tensor Processing Unit.” Proceedings of the 44th Annual International Symposium on Computer Architecture, 1-12.
+    
+	10.	Preskill, J. (2018). “Quantum Computing in the NISQ Era and Beyond.” Quantum, 2, 79.
+
+\end{document}
+
